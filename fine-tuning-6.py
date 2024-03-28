@@ -17,29 +17,10 @@ logo_path = 'logo-liveFresh.png'
 st.image(logo_path, width=200)  # Logo-Größe anpassen
 st.title('LiveFresh Berater')
 
-# CSS für den Chat anpassen
-st.markdown(
-    """
-    <style>
-        .chat-message {
-            border-radius: 25px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .user-message {
-            background-color: #FFAFBD;
-            margin-left: 20%;
-            text-align: right;
-        }
-        .assistant-message {
-            background-color: #A0E7E5;
-            margin-right: 20%;
-            text-align: left;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+# CSS aus externer Datei laden
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 
 # Chatverlauf initialisieren, wenn nicht vorhanden
 if 'messages' not in st.session_state:
