@@ -1,0 +1,36 @@
+/* Stil für die Chat-Nachrichten */
+.chat-message {
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80%;
+}
+
+/* Stil für Nutzernachrichten */
+.user-message {
+    background-color: #FFAFBD;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+/* Stil für Assistenten-Nachrichten */
+.assistant-message {
+    background-color: #A0E7E5;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+
+/* Stil für anklickbare Links innerhalb der Chat-Nachrichten */
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
