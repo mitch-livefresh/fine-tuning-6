@@ -10,7 +10,7 @@
 
 /* Stil für Nutzernachrichten */
 .user-message {
-    background-color: #FFAFBD;
+    background-color: #E8F0F2; /* Ein sanftes Blau-Grün, für eine beruhigende Optik */
     margin-left: auto;
     margin-right: 0;
     text-align: right;
@@ -18,7 +18,7 @@
 
 /* Stil für Assistenten-Nachrichten */
 .assistant-message {
-    background-color: #A0E7E5;
+    background-color: #F2F8F3; /* Ein sehr helles Grün, passend zu LiveFresh */
     margin-right: auto;
     margin-left: 0;
     text-align: left;
@@ -26,11 +26,12 @@
 
 /* Stil für anklickbare Links innerhalb der Chat-Nachrichten */
 a {
-    color: #007bff;
+    color: #0C5C46; /* LiveFresh-Grün für Links */
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #08302A; /* Ein dunkleres Grün beim Hover für bessere Lesbarkeit */
 }
