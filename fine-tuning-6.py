@@ -48,7 +48,7 @@ if 'messages' not in st.session_state:
 # Funktion, um eine Antwort vom OpenAI-Assistenten zu erhalten
 def get_response(question):
     response = openai.ChatCompletion.create(
-        model="ftjob-muKyRHfJ5y14xEzzkjdQ2cCQ",  # Fine-tuning Model ID (Name)
+        model="ft:gpt-3.5-turbo-1106:personal:lf-gpt-6:97o2FkOX",  # Fine-tuning Model ID (Name)
         messages=[{"role": "system", "content": "Du bist ein hilfreicher LiveFresh Assistent für Produkt- und Gesundheitsberatung."},
                   *st.session_state['messages'],
                   {"role": "user", "content": question}],
