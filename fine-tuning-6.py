@@ -16,6 +16,7 @@ logo_path = 'logo-liveFresh.png'
 # Titel und Logo der Streamlit Seite/App anzeigen
 st.image(logo_path, width=200)  # Logo-Größe anpassen
 st.title('LiveFresh Berater')
+st.caption('Produkt und Gesundheitsberater für LiveFresh / kein medizinischer Ratgeber. Stelle mir Fragen zu Produkten von LiveFresh oder gesundheitlichen Themen')
 
 # CSS aus externer Datei laden
 with open('style.css') as f:
