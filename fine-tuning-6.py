@@ -33,7 +33,7 @@ def make_links_clickable(text):
 # Funktion, um eine Antwort vom OpenAI-Assistenten zu erhalten
 def get_response(question):
     response = openai.ChatCompletion.create(
-        model="ft:gpt-3.5-turbo-1106:personal:lf-gpt-7:97qeCiol",  # Fine-tuning Model ID (Name)
+        model="ft:gpt-3.5-turbo-1106:personal:lf-gpt-8:99Vje13U",  # Fine-tuning Model ID (Name)
         messages=[{"role": "system", "content": "Du bist ein hilfreicher LiveFresh Assistent für Produkt- und Gesundheitsberatung."},
                   *st.session_state['messages'],
                   {"role": "user", "content": question}],
