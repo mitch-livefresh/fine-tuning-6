@@ -1,4 +1,4 @@
-/* Stil für die Chat-Nachrichten */
+/* Chat-Nachrichten */
 .chat-message {
     border-radius: 25px;
     padding: 10px;
@@ -8,9 +8,9 @@
     max-width: 80%;
 }
 
-/* Stil für Nutzernachrichten */
+/* Bennutzernachrichten */
 .user-message {
-    background-color: #E8F0F2; /* Ein sanftes Blau-Grün, für eine beruhigende Optik */
+    background-color: #E8F0F2; 
     margin-left: auto;
     margin-right: 0;
     text-align: right;
@@ -18,7 +18,7 @@
 
 /* Stil für Assistenten-Nachrichten */
 .assistant-message {
-    background-color: #F2F8F3; /* Ein sehr helles Grün, passend zu LiveFresh */
+    background-color: #F2F8F3; 
     margin-right: auto;
     margin-left: 0;
     text-align: left;
