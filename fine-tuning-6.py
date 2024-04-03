@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 import os
 import re  
 
-# UMgebungsvariablen werden geladen
+# UMgebungsvariablen
 load_dotenv()
 
-# API-Schlüssel lesen
+# API-Key von OpenAi (liegt in der .env --> gitignore)
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # LiveFresh-Logo
