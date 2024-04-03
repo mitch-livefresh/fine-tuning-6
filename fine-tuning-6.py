@@ -2,9 +2,9 @@ import openai
 import streamlit as st
 from dotenv import load_dotenv
 import os
-import re  # Für das Erkennen von URLs im Antworttext
+import re  # Für das Erkennen und darstellen von URLs im Antworttext
 
-# Lade Umgebungsvariablen
+# UMgebungsvariablen werden geladen
 load_dotenv()
 
 # API-Schlüssel aus der Umgebungsvariablen lesen
@@ -29,7 +29,7 @@ if 'messages' not in st.session_state:
 # Funktion, um URLs in anklickbare Links umzuwandeln
 def make_links_clickable(text):
     url_pattern = re.compile(r'https?://\S+|www\.\S+')
-    return url_pattern.sub(lambda url: f'<a href="{url.group()}" target="_blank">{url.group()}</a>', text)
+    return url_pattern.sub(lambda url: f'<a href="{url.group()}">{url.group()}</a>', text)
 
 # Funktion, um eine Antwort vom OpenAI-Assistenten zu erhalten
 def get_response(question):
