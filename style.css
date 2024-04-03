@@ -1,27 +1,30 @@
 /* Chat-Nachrichten */
 .chat-message {
+    font-size: 16px;
     border-radius: 25px;
     padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.5;
     max-width: 80%;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    
 }
 
 /* Bennutzernachrichten */
 .user-message {
     background-color: #E8F0F2; 
+    text-align: right;
     margin-left: auto;
     margin-right: 0;
-    text-align: right;
+    
 }
 
 /* Stil für Assistenten-Nachrichten */
 .assistant-message {
-    background-color: #F2F8F3; 
-    margin-right: auto;
-    margin-left: 0;
     text-align: left;
+    background-color: #F2F8F3; 
+    margin-left: 0;
+    margin-right: auto;
+    
 }
 
 /* Stil für anklickbare Links innerhalb der Chat-Nachrichten */
